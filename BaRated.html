@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BaRated: See Your Surrounding Bar Scene!</title>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="BaRated.css" />
+        <script src="BaRated.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaLEK4RygX7DguwWBugf-Lhv-vwIeoifA&callback=initMap"></script>
+    </head>
+    
+    <body>
+        <div id = "header">
+            <h1>Welcome To Ba<span id = "R">R</span>ated!</h1>
+        </div>
+        
+        <div class = "row">
+            <div class = "col-md-4">
+                <div class = form-group>
+                    <label for = "barSelected">Select a Bar:</label>
+                    <select id = "barSelected" name = "barSelected" class = "form-control">
+                        <option value = "">Select Bar</option>
+                        <option value = "0">Olive Branch</option>
+                        <option value = "1">Kelly's Korner</option>
+                        <option value = "2">Heuy's Knight Club</option>
+                        <option value = "3">Ale 'N 'Wich</option>
+                        <option value = "4">Scarlet Pub</option>
+                        <option value = "5">Golden Rail</option>
+                        <option value = "6">Stuff Yer Face</option>
+                        <option value = "7">Evelyn's</option>
+                        <option value = "8">Barca City</option>
+                        <option value = "9">Brother Jimmy's BBQ</option>
+                    </select>
+                </div>
+            </div>
+            <div class = "col-md-8">
+                
+            </div>
+        </div>
+        
+        <div class = "row">
+            <div  id = "map" class = "col-md-4 table-bordered">
+                
+            </div>
+            <div class = "col-md-8">
+                <div class = "row">
+                    <h3>Bar Information:</h3>
+                    <div id = "barInformation">
+                    
+                    </div>
+                    <ul class = "list-group" id = "hoursOfOperation">
+                        
+                    </ul>
+                </div>
+                <div class = "row">
+                    <form id = "ratingSelected" role = "form">
+                        <div class = "form-group" id = "ratingSelected">
+                            <label for = "ratingSelected">Rate The Bar:</label>
+                            <br>
+                            <input class="ratingC" type="radio" idea="r1" name="rating" value = "1"/> 1
+                            <input class="ratingC" type="radio" idea="r2" name="rating" value = "2"/> 2
+                            <input class="ratingC" type="radio" idea="r3" name="rating" value = "3"/> 3
+                            <input class="ratingC" type="radio" idea="r4" name="rating" value = "4"/> 4
+                            <input class="ratingC" type="radio" idea="r5" name="rating" value = "5"/> 5
+                        </div>
+                        <button id = "ratingSelected">Submit Rating</button>
+                    </form>
+                    <div id = "errorSectionRating">
+                        
+                    </div>
+                    <div id = "successSectionRating">
+                        
+                    </div>
+                    <div id = "barRating">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class = "row">
+            <div class = "col-md-4">
+                <form id = "commentSubmit" role = "form">
+                    <h3>Post a Comment:</h3>
+                    <div class = "row">
+                        <div class = "col-md-6">
+                            <div class = "form-group">
+                                <label for = "fistName">First Name</label>
+                                <input type = "text" class = "form-control" id = "firstName" name = "firstName" placeholder = "E.g. Alex"/>
+                            </div>
+                        </div>
+                        <div class = "col-md-6">
+                            <div class = "form-group">
+                                <label for = "lastInit">Last Name Initial</label>
+                                <input type = "text" class = "form-control" id = "lastInit" name = "lastInit" placeholder = "E.g. D"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-md-12" id = "errorSection">
+                            
+                        </div>
+                    </div>
+                    <div class = "form-group">
+                        <label for = "commentBody">Comment Text</label>
+                        <input type = "text" class = "form-control" id = "commentBody" name = "commentBody" placeholder = "Enter comment here... (Max 500 characters)"/>
+                    </div>
+                    <button id = "commentSubmit">Submit Comment</button>
+                </form>
+                <div id = "successSection">
+                    
+                </div>
+                
+                <div class = "row" id = "commentsSection">
+                    <div class = "col-md-12" id = "Comments">
+                        <h3>Comments:</h3>
+                        <ul class = "list-group" id = "commentsSectionList">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-md-8">
+                <h3>#Ba<span id = "R">R</span>ated Feed:</h3>
+                <div class = "col-md-6" id = "Twitter">
+                    <ul class="list-group" id="twitterFeed">
+                        
+                    </ul>
+                </div>
+                <div class = "col-md-6" id = "Instagram">
+                    <ul class="list-group" id="instaFeed">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
