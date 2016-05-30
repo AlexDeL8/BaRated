@@ -23,23 +23,23 @@ the site for users to see a "live-feed" of the current bar expereinces others
 are having.  The Google Maps API was used in order to show the location of the
 bars in the city.
 
-Line -Twitter
-    Line The Twitter API was used to retrieve tweets (in the form of a JSON object) 
-    Line using:
-        Line `q: '%23BaRated'`
-    Line with q being the query, and '%23BaRated' (translating to '#BaRated') 
-    Line being the arguement to search by.
+Para -Twitter
+    Para The Twitter API was used to retrieve tweets (in the form of a JSON object) 
+    Para using:
+        Para `q: '%23BaRated'`
+    Para with q being the query, and '%23BaRated' (translating to '#BaRated') 
+    Para being the arguement to search by.
 
-Line -Instagram
-    Line The Instagram API was used to retieve instagram posts 
-    Line (in the form of a JSONP object) using:
-        Line `q: 'BaRated'`
-    Line with q being the query to search for posts by, and 'BaRated' being the 
-    Line arguement to search by.
+Para -Instagram
+    Para The Instagram API was used to retieve instagram posts 
+    Para (in the form of a JSONP object) using:
+        Para `q: 'BaRated'`
+    Para with q being the query to search for posts by, and 'BaRated' being the 
+    Para arguement to search by.
 
-Line -Google Maps
-    Line The Google Maps API was used to initalize and present a map of New Brunswick
-    Line and placed markers on the map in respect to which bar is selceted on the site.
+Para -Google Maps
+    Para The Google Maps API was used to initalize and present a map of New Brunswick
+    Para and placed markers on the map in respect to which bar is selceted on the site.
 
 Contacts
 --------
