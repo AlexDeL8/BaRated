@@ -24,25 +24,20 @@ are having.  The Google Maps API was used in order to show the location of the
 bars in the city.
 
 -Twitter<br />
-    The Twitter API was used to retrieve tweets (in the form of a JSON object) <br />
-    using:<br />
+    The Twitter API was used to retrieve tweets (in the form of a JSON object) using:<br />
         `q: '%23BaRated'`<br />
-    with q being the query, and '%23BaRated' (translating to '#BaRated') <br />
-    being the arguement to search by.<br />
+    with q being the query, and '%23BaRated' (translating to '#BaRated') being the arguement to search by.<br />
 
 -Instagram<br />
-    The Instagram API was used to retieve instagram posts <br />
-    (in the form of a JSONP object) using:<br />
+    The Instagram API was used to retieve instagram posts (in the form of a JSONP object) using:<br />
         `q: 'BaRated'`<br />
-    with q being the query to search for posts by, and 'BaRated' being the <br />
-    arguement to search by.<br />
+    with q being the query to search for posts by, and 'BaRated' being the arguement to search by.<br />
 
 -Google Maps<br />
-    The Google Maps API was used to initalize and present a map of New Brunswick <br />
-    and placed markers on the map in respect to which bar is selceted on the site.<br />
+    The Google Maps API was used to initalize and present a map of New Brunswick and placed markers on the map in respect to which bar is selceted on the site.<br />
 
 Contacts
 --------
     
 If you have any questions or comments on this project please 
-feel free to email me at [`<alexnaj88@gmail.com>`](mailto:alexnaj88@gmail.com?Subject=Questions/Comments About BaRated)
+feel free to email me at [`alexnaj88@gmail.com`](mailto:alexnaj88@gmail.com?Subject=Questions/Comments About BaRated)
