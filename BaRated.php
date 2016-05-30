@@ -1,10 +1,11 @@
 <?php
-    #https://advwebdesign-alexdel.c9users.io/FinalProject/db.php
+    #uses c9 database
     $link = mysqli_connect("0.0.0.0", "alexdel", "", "BaRatedDB");
     
     $bar = $_REQUEST['bar'];
-    if($link){
-        if($_GET) {
+    if($link){ //check if connection was established
+        if($_GET) { #if so, if a GET perform these actions
+            //pull comments
             $comments = mysqli_query($link, "SELECT * FROM TBL_Comments WHERE barID = " . $bar);
                 class comment {
                     var $firstName; 
@@ -16,6 +17,10 @@
                 }
                 
                 $commentsArray = Array();
+                /*
+                go through each row in the returned array from the query and set the comment object up and append it to
+                an array of comment objects
+                */
                 while ($row = mysqli_fetch_assoc($comments)) {
                     $comment = new comment;
                     $comment->firstName = $row["firstName"];
@@ -24,6 +29,7 @@
                     $commentsArray[] = $comment;
                 }
                 
+                //pull the rating for that bar by getting all the ratings for the bar and averaging
                 $ratings = mysqli_query($link, "SELECT AVG(barRating) AS rating FROM TBL_Ratings WHERE barID = " . $bar);
                 while($row = mysqli_fetch_assoc($ratings)) {
                     $rating = new rating;
@@ -44,7 +50,7 @@
                 mysqli_free_result($comments);
                 mysqli_free_result($ratings);
                 
-        } else if ($_POST) {
+        } else if ($_POST) { //else if a POST, perform these actions
             $bar = $_REQUEST['bar'];
             $rating = $_REQUEST['rating'];
             
