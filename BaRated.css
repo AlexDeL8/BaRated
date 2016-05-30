@@ -1,3 +1,6 @@
+/****************************
+General Site Styling
+****************************/
 body {
     background: url("DefaultBarWoodenBackground.jpg")no-repeat scroll 0 0 / 100% 100% transparent !important;
     height: 100%;
@@ -27,6 +30,9 @@ button:active {
     border: 2px solid #FFFFFF;
 }
 
+/****************************
+Google Map Styling
+****************************/
 #map {
     height: 440px;
 }
@@ -40,6 +46,13 @@ button:active {
     color: black;
 }
 
+/****************************
+Bar Information Styling
+****************************/
+.barInformation {
+    font-style: italic;
+}
+
 #hoursOfOperation {
     padding-left: 20px;
     list-style-type: square;
@@ -50,19 +63,9 @@ button:active {
     color: red;
 }
 
-#errorSection > p {
-    font-weight: bold;
-    color: red;
-}
-
 #errorSectionRating > p {
     font-weight: bold;
     color: red;
-}
-
-#successSection > p {
-    font-weight: bold;
-    color: green;
 }
 
 #successSectionRating > p {
@@ -70,6 +73,9 @@ button:active {
     color: green;
 }
 
+/****************************
+Tweet Styling Styling
+****************************/
 #Twitter {
     height: 500px;
     overflow: scroll;
@@ -91,6 +97,9 @@ button:active {
     background-color: #008000;
 }
 
+/****************************
+Instagram Post Styling
+****************************/
 #Instagram {
     height: 500px;
     overflow: scroll;
@@ -104,6 +113,9 @@ button:active {
     background-color: #FF0000;
 }
 
+/****************************
+Comments Styling
+****************************/
 #Comments {
     height: 350px;
     overflow: scroll;
@@ -117,17 +129,22 @@ button:active {
     font-weight: bold;
 }
 
-.description {
-    font-style: italic;
+#errorSection > p {
+    font-weight: bold;
+    color: red;
 }
 
+#successSection > p {
+    font-weight: bold;
+    color: green;
+}
+
+/****************************
+Rating Styling
+****************************/
 .currentBarRating {
     font-weight: bold;
     font-size: 25px;
-}
-
-.barInformation {
-    font-style: italic;
 }
 
 #badRating {
