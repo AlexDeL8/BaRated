@@ -60,7 +60,8 @@ $(document).ready(function() {
             allowAjaxHide = false;
         }
     });
-        
+    
+    //Twitter API, Tweet Retrieval based on '%23BaRated' OR '#BaRated'
     $.ajax({
         url: '/api/index.php/TwitterAppOnly/search/tweets.json',
         type: 'GET',
@@ -74,6 +75,10 @@ $(document).ready(function() {
                 var statuses = serverResponse.statuses;
                 console.log(statuses);
                 
+                /*
+                Initialize the myHTML string to append each list object to, and then 
+                append the final string of HTML list object to the #twitterFeed css selector
+                */
                 var myHTML = '';
                 for(var i = 0; i < statuses.length; i++){
                     myHTML += '<li class="tweet list-group-item">';
@@ -104,6 +109,8 @@ $(document).ready(function() {
         }
     });
     
+    /*
+    */
     $.ajax({
         url: 'https://api.instagram.com/v1/tags/barated/media/recent?access_token=209369514.1677ed0.f8139a25ddfc4d129495d659c9769beb',
         type: 'GET',
