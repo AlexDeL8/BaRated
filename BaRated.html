@@ -21,6 +21,7 @@
         
         <div class = "row">
             <div class = "col-md-4">
+                <!-- Bar Dropdown Selection -->
                 <div class = form-group>
                     <label for = "barSelected">Select a Bar:</label>
                     <select id = "barSelected" name = "barSelected" class = "form-control">
@@ -39,25 +40,26 @@
                 </div>
             </div>
             <div class = "col-md-8">
-                
+                <!-- Empty space for the rest of the Bootstrap row -->
             </div>
         </div>
         
         <div class = "row">
             <div  id = "map" class = "col-md-4 table-bordered">
-                
+                <!-- Map to be initialized here -->
             </div>
             <div class = "col-md-8">
                 <div class = "row">
                     <h3>Bar Information:</h3>
                     <div id = "barInformation">
-                    
+                        <!-- Bar Information to be appended here -->
                     </div>
                     <ul class = "list-group" id = "hoursOfOperation">
-                        
+                        <!-- Bar Hours of Operation to be appended here -->
                     </ul>
                 </div>
                 <div class = "row">
+                    <!-- Bar rating system using radio input buttons -->
                     <form id = "ratingSelected" role = "form">
                         <div class = "form-group" id = "ratingSelected">
                             <label for = "ratingSelected">Rate The Bar:</label>
@@ -71,13 +73,13 @@
                         <button id = "ratingSelected">Submit Rating</button>
                     </form>
                     <div id = "errorSectionRating">
-                        
+                        <!-- Errors for rating submission to be appended here -->
                     </div>
                     <div id = "successSectionRating">
-                        
+                        <!-- Sucsess message for rating submission to be appeneded here  -->
                     </div>
                     <div id = "barRating">
-                        
+                        <!-- Bar rating to be appended here upon retrieval -->
                     </div>
                 </div>
             </div>
@@ -85,6 +87,7 @@
         
         <div class = "row">
             <div class = "col-md-4">
+                <!-- Comments submission forms -->
                 <form id = "commentSubmit" role = "form">
                     <h3>Post a Comment:</h3>
                     <div class = "row">
@@ -103,7 +106,7 @@
                     </div>
                     <div class = "row">
                         <div class = "col-md-12" id = "errorSection">
-                            
+                            <!-- Errors for comment submission to be appended here -->
                         </div>
                     </div>
                     <div class = "form-group">
@@ -113,28 +116,31 @@
                     <button id = "commentSubmit">Submit Comment</button>
                 </form>
                 <div id = "successSection">
-                    
+                    <!-- Success message for comment submission to be appended here -->
                 </div>
                 
+                <!-- Existing comments section -->
                 <div class = "row" id = "commentsSection">
                     <div class = "col-md-12" id = "Comments">
                         <h3>Comments:</h3>
                         <ul class = "list-group" id = "commentsSectionList">
-                            
+                            <!-- Existing comments to be appended here -->
                         </ul>
                     </div>
                 </div>
             </div>
+            
+            <!-- Social media APIs presented here -->
             <div class = "col-md-8">
                 <h3>#Ba<span id = "R">R</span>ated Feed:</h3>
                 <div class = "col-md-6" id = "Twitter">
                     <ul class="list-group" id="twitterFeed">
-                        
+                        <!-- Tweets to be appended here -->
                     </ul>
                 </div>
                 <div class = "col-md-6" id = "Instagram">
                     <ul class="list-group" id="instaFeed">
-                        
+                        <!-- Instagram posts to be appended here -->
                     </ul>
                 </div>
             </div>
