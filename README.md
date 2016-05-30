@@ -17,14 +17,29 @@ information about the bars (including hours of operation, phone number, etc.).
 APIs Used
 ---------
 
+There were 3 APIs required for the project and these were the 3 that were
+implemented into BaRated.  These were mainly to add a social media aspect for 
+the site for users to see a "live-feed" of the current bar expereinces others
+are having.  The Google Maps API was used in order to show the location of the
+bars in the city.
+
 -Twitter
-    
+    The Twitter API was used to retrieve tweets (in the form of a JSON object) 
+    using:
+        q: '%23BaRated'
+    with q being the query, and '%23BaRated' (translating to '#BaRated') 
+    being the arguement to search by.
 
 -Instagram
-    
+    The Instagram API was used to retieve instagram posts 
+    (in the form of a JSONP object) using:
+        q: 'BaRated'
+    with q being the query to search for posts by, and 'BaRated' being the 
+    arguement to search by.
 
 -Google Maps
-    
+    The Google Maps API was used to initalize and present a map of New Brunswick
+    and placed markers on the map in respect to which bar is selceted on the site.
 
 Contacts
 --------
